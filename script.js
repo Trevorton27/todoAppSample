@@ -9,8 +9,6 @@
 
 let addTodoButton = document.querySelector(".submitButton");
 addTodoButton.addEventListener("click", showTodo);
-let deleteAll = document.querySelector("button");
-deleteAll.addEventListener("click", vanishItem);
 
 
 
@@ -26,15 +24,26 @@ function showTodo(event) {
 }
 
 function createTodo(text) {
-//   const deleteButton = document.getElementById("dltButton");
+    const completedButton = document.createElement("button");
+    completedButton.textContent = "o";
+    completedButton.addEventListener("click", function () {
+        listedItemToDo.innerHTML= '<strike>' + listedItemToDo.innerHTML + '</strike>'
+    });
+
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "X";
+  deleteButton.style.color = 'white';
+  deleteButton.style.backgroundColor = 'red';
+  deleteButton.addEventListener("click" ,  function() {
+    //   if (completedButton == true)
+    console.log("Delete was clicked")
+    listedItemToDo.remove();
+    });
   const listedItemToDo = document.createElement("li");  
+  listedItemToDo.style.listStyle = 'none';
+  listedItemToDo.append(completedButton);
   listedItemToDo.append(text);
   listedItemToDo.append(deleteButton);
   return listedItemToDo ;
+  
 }
-
-// function vanishItem () {
-// console.log("vanished");
-// }
