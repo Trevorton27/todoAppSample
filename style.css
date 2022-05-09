@@ -2,8 +2,14 @@
   border: 2px solid black;
   display: flex;
   justify-content: end;
+  width: max-content;
+  margin: auto;
 }
 
+.inputContainer > #taskBox {
+  flex: 2;
+  font-size: xx-large;
+}
 .submitButton {
   font-size: xx-large;
   background-color: lightseagreen;
@@ -14,19 +20,32 @@
 .deleteButton {
   font-size: xx-large;
   background-color: red;
-  font: bold;
+  font: bolder;
   color: white;
   padding: 3px;
 }
-
-.inputContainer > #taskBox {
-  flex: 2;
-  font-size: xx-large;
-}
-
 .listContainer {
   display: flex;
   justify-content: center;
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: bolder;
+}
+
+body {
+  background-color: lightsteelblue;
+  margin: 15%;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 0px;
 }
