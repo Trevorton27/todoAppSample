@@ -2,7 +2,7 @@
 
 Keep track of your daily things to do with this simple To-Do app created by <strong>HTML, CSS, and Javascript.</strong>
 
-Got errands? Keep track and put them down [here!!]()
+Got errands? Keep track and put them down [here!!](https://ajprado12.github.io/todolist/)
 ![TodoList](https://user-images.githubusercontent.com/102049335/167511117-1e51676a-245e-4a5e-8f9b-25c152570aa7.jpg)
 
 <strong> Summary </strong>
